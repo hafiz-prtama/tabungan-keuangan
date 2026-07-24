@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplikasi Pencatatan Keuangan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <header>
+    <h1>KeuanganKu</h1>
+    <p>Kelola pemasukan &amp; pengeluaran berdasarkan jenis/kategori</p>
+  </header>
+  
+  <div class="nav-bar" style="text-align: center;">
+    <a href="celengan.html" class="nav-link">Ke Halaman Celengan ➡️</a>
+  </div>
+  
+<div class="container">
+  
+  <div class="summary">
+    <div class="box">
+      <div class="label">Total Pemasukan</div>
+      <div class="value green" id="totalMasuk">Rp 0</div>
+    </div>
+    <div class="box">
+      <div class="label">Total Pengeluaran</div>
+      <div class="value red" id="totalKeluar">Rp 0</div>
+    </div>
+    <div class="box">
+      <div class="label">Saldo</div>
+      <div class="value blue" id="totalSaldo">Rp 0</div>
+    </div>
+  </div>
+  
+  <div class="add-category">
+    <input type="text" id="newCategoryName" placeholder="Nama jenis baru, contoh: Uang Kas, Uang Jajan">
+    <button class="btn-primary" onclick="tambahKategori()">+ Tambah List</button>
+  </div>
+  
+  <div id="categoryList"></div>
+  
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
